@@ -29,6 +29,17 @@
 		<h1>Hola Mundo</h1>
 		<p>Karol Cortez Estrada<br>CBTis 20<br> Desarrolla Paginas Web  5M<br>13/09/2023</p>
 		<a href="Correo.php">Hola</a>
+
+		<?php
+/*
+    Enviar correo desde PHP con mail
+*/
+$resultado = mail("karolce2511@gmail.com", "Yo soy el asunto del correo", "Yo soy el mensaje");
+if ($resultado) {
+    echo "El correo fue enviado";
+} else {
+    echo "El correo no fue enviado";
+}
 		
 		<footer id="pie">
 			<p>Pie de pagina</p>
