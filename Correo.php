@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PruebaCorreo</title>
-<link rel="shortcut icon" href="Imagenes\IconoPersonal.png" type="imag/x-icon">
-	<meta charset="utf-8">
-</head>
-<body>
 <?php
 function limpiarAsunto($asunto)
 {
@@ -72,5 +64,22 @@ if ($resultado) {
     echo "Correo NO enviado";
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PruebaCorreo</title>
+<link rel="shortcut icon" href="Imagenes\IconoPersonal.png" type="imag/x-icon">
+	<meta charset="utf-8">
+</head>
+<body>
+<form action="Correo.php" method="GET">
+	
+
+<input type="submit" value="Enviar">
+
+
+
+</form>
 </body>
 </html>
